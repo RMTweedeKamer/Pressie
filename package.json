@@ -1,5 +1,7 @@
 {
-  "name": "Pressie",
-  "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "snuownd": "github:gamefreak/snuownd"
+  },
+  "name": "pressie",
+  "version": "1.0.0"
 }

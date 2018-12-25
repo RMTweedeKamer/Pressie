@@ -14,3 +14,24 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+//= require snuownd/snuownd
+
+document.addEventListener("DOMContentLoaded", function () {
+  var render = function (output, value) {
+    output.innerHTML = SnuOwnd.getParser().render(value);
+  }
+  // Could cause issues since querySelector only selects ONE element.
+  var markdown = document.querySelector('#template_content');
+  var html = document.querySelector('.snuownd-out');
+
+  debugger;
+
+
+  if (markdown && html) {
+    markdown.addEventListener('input', function (e) {
+      render(html, e.target.value);
+    });
+
+    render(html, markdown.value);
+  }
+});

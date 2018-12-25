@@ -29,3 +29,9 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+/node_modules
+
+/node_modules
+/vendor/assets/stylesheets/gulp
+/vendor/assets/javascripts/gulp
